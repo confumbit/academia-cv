@@ -21,10 +21,10 @@
 
 %%% define the \datedsubsection command %%%
 \newcommand{\datedsubsection}[4]{%	
-	\cvsubsection[#2]{#3 \hfill \small{\scshape{#2}}}%
-	\begin{minipage}{5cm}
-		\vspace*{-.7ex}\hspace*{-3cm}\footnotesize #1
-	\end{minipage}
+	\cvsubsection[#2]{#3 \hfill \small{\scshape{#1}}}%
+	\vspace{0.35cm}
+	\small{\scshape{#2}}
+	\vspace{0.1cm}
 	\raggedright
 
 	\begin{small}
@@ -34,10 +34,8 @@
 
 %%% define the \datedsubsectionnarrow command %%%
 \newcommand{\datedsubsectionnarrow}[4]{%	
-	\cvsubsectionnarrow[#2]{#3 \hfill \small{\scshape{#2}}}%
-	\begin{minipage}{5cm}
-		\vspace*{-.7ex}\hspace*{-3.1cm}\footnotesize #1
-	\end{minipage}
+	\cvsubsection[#2]{#3~~\small{\scshape{\textit{#2}}} \hfill \small{\scshape{#1}}}
+	\vspace{0.45cm}
 	\raggedright
 
 	\begin{small}
